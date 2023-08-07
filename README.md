@@ -157,3 +157,12 @@ The processing results are retrieved as a dictionary, which has a structure simi
 }
 ```
 Then `dlt` saves all processed structured data to the database (e.g. bigquery).
+
+
+## Deploy
+
+Run the command:
+
+```shell
+dlt deploy --schedule "0 20 * * *" unstructured_data_pipeline.py github-action 
+```

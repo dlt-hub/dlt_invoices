@@ -1,7 +1,7 @@
 name: Run unstructured_inbox pipeline from unstructured_data_pipeline.py
 'on':
   schedule:
-  - cron: 0 20 * * *
+  - cron: 0 17 * * *
 env:
   DESTINATION__BIGQUERY__CREDENTIALS__PROJECT_ID: dlt-dev-external
   DESTINATION__BIGQUERY__CREDENTIALS__CLIENT_EMAIL: dlt-unstructured@dlt-dev-external.iam.gserviceaccount.com

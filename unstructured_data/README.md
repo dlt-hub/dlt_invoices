@@ -115,11 +115,3 @@ you can use any custom name instead. So your command would look like:
 ```bash
 dlt pipeline unstructured_inbox show
 ```
-
-## Deploy
-
-Run the command:
-
-```shell
-dlt deploy --schedule "0 20 * * *" unstructured_data_pipeline.py github-action 
-```
