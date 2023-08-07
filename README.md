@@ -164,5 +164,7 @@ Then `dlt` saves all processed structured data to the database (e.g. bigquery).
 Run the command:
 
 ```shell
-dlt deploy --schedule "0 20 * * *" unstructured_data_pipeline.py github-action 
+dlt deploy --schedule "0 18 * * *" unstructured_data_pipeline.py github-action 
 ```
+
+Read more in [Deploy with GitHub Actions.](https://dlthub.com/docs/walkthroughs/deploy-a-pipeline/deploy-with-github-actions)
