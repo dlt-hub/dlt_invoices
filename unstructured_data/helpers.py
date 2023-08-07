@@ -19,7 +19,6 @@ vectorstore_mapping: Mapping[str, Type[VectorStore]] = {
 
 def safely_query_index(index: Any, query: str) -> Any:
     answer = index.query(query)
-    print(answer)
     return answer.strip()
 
 
@@ -84,7 +83,6 @@ def process_file_to_structured(
     """
     response = {}
     loader = UnstructuredFileLoader(file_path)
-    print(file_path)
     try:
         index = VectorstoreIndexCreator(vectorstore_cls=vectorstore).from_loaders([loader])
     except IndexError:

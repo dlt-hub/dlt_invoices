@@ -64,9 +64,9 @@ def from_inbox_to_structured() -> None:
     # configure the pipeline with your destination details
     pipeline = dlt.pipeline(
         pipeline_name="unstructured_inbox",
-        destination='duckdb',
+        destination='bigquery',
         dataset_name="unstructured_inbox_data",
-        full_refresh=True,
+        full_refresh=False,
     )
     with tempfile.TemporaryDirectory() as tmpdirname:
         data_source = inbox_source(
