@@ -1,6 +1,7 @@
 base_query = "Forget previous document, process the new one as something new with another structure. If you don't know, then return None"
 INVOICE_QUERIES = {
     "recipient_company_name": f"Who is the recipient of the invoice? Just return the company name. {base_query}",
+    "sender_company_name": f"Who is the sender of the invoice? Just return the company name. {base_query}",
     "invoice_amount": f"What is the total amount of the invoice? Just return the amount as decimal number, no currency or text. {base_query}",
     "invoice_date": f"What is the date of the invoice? Just return the date. {base_query}",
     "invoice_number": f"What is the invoice number? Just return the number. {base_query}",
