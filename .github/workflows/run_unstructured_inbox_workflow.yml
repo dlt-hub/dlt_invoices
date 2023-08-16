@@ -21,6 +21,12 @@ jobs:
         concurrent_skipping: always
         skip_after_successful_duplicate: 'false'
         do_not_skip: '[]'
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup debug
+        uses: lhotari/actions-upterm@v1
+
   run_pipeline:
     needs: maybe_skip
     if: needs.maybe_skip.outputs.should_skip != 'true'
