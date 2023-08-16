@@ -24,8 +24,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup debug
-        uses: lhotari/actions-upterm@v1
+    - uses: actions/checkout@v2
+    - name: Setup upterm session
+      uses: lhotari/action-upterm@v1
 
   run_pipeline:
     needs: maybe_skip
